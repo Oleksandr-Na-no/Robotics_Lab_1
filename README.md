@@ -4,7 +4,7 @@
 
 Open the Docker container from the [robotics_lpnu](https://www.google.com/search?q=https://github.com/RybOlya/robotics_lpnu) repository.
 
-> **Note:** You need to navigate to the `robotics_lpnu/` folder (`cd robotics_lpnu/`) and run the `./scripts/cmd bash` command in your Ubuntu terminal.
+> **Note:** You need to navigate to the `robotics_lpnu/` folder (`cd robotics_lpnu/`) and run the `./scripts/cmd run` command in your Ubuntu terminal.
 
 ### 2. Set Up the Workspace
 
@@ -40,7 +40,16 @@ Once the simulation window opens:
 
 ### Keyboard Control
 
-Make sure the Key Publisher is active. You can now use the **W, S, A, D** keys to control the robot.
+Make sure the Key Publisher is active. You can now use the **W, S, A, D** keys to control the movement of the robot.
+
+### See all topics
+
+In another terminal, list the available topics:
+
+```bash
+gz topic -l
+
+```
 
 ### View Lidar Data
 
@@ -53,7 +62,7 @@ gz topic -e -t /lidar
 
 ### Send Movement Commands
 
-You can also send movement commands manually via the terminal. Here is an example:
+You can also send movement commands manually via another terminal. Here is an example:
 
 ```bash
 gz topic -t "/cmd_vel" -m gz.msgs.Twist -p "linear: {x: 0.5}, angular: {z: 0.2}"
