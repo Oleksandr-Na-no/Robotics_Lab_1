@@ -4,7 +4,7 @@
 
 Open the Docker container from the [robotics_lpnu](https://www.google.com/search?q=https://github.com/RybOlya/robotics_lpnu) repository.
 
-> **Note:** Usually, this is done by running `./scripts/cmd bash` in your terminal.
+> **Note:** You need to navigate to the `robotics_lpnu/` folder (`cd robotics_lpnu/`) and run the `./scripts/cmd bash` command in your Ubuntu terminal.
 
 ### 2. Set Up the Workspace
 
