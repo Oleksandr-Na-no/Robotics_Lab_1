@@ -44,7 +44,8 @@ Make sure the Key Publisher is active. You can now use the **W, S, A, D** keys t
 
 ### See all topics
 
-In another terminal, list the available topics:
+In another terminal(in windows in new terminal `wsl` then `docker exec -it YOUR_DOCKER_CONTAINER_ID bash` and `source /opt/ros/jazzy/setup.bash`), 
+to list the available topics:
 
 ```bash
 gz topic -l
